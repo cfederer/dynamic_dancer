@@ -18,8 +18,6 @@
   		<div class="col-md-12">
   			<button id = "addNewDancer" class="btn">Add New Dancer</button>
     		<button id = "addNewDance" class="btn">Add New Dance</button>
-    		<button id = "removeDancer" class="btn">Remove Dancer</button>
-    		<button id = "removeDance" class="btn">Remove Dance</button>
   		</div>
   	</div>
     <div class="row">
