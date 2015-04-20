@@ -4,31 +4,57 @@
     <meta charset="utf-8" />
     <meta name="author" content="Andrew Paulman" />
     <title>Dynamic Dance Costume Inventory</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/layout.css">
    </head>
   <body>
-  <h1 id = "mainTitle">Dynamic Dance Costume Inventory</h1>
+  	<div class="container-fluid bighead">
+  		<h1 id = "mainTitle">Dynamic Dance Costume Inventory</h1>
+  	</div>
+  <div class="container-fluid">
   <h2 id = "newDancerTitle">Create A New Dancer </h2>
   <form>
-    <div id = "basicInformation">
-     <p>First Name: </p> <input></input>
-     <p>Last Name: </p> <input></input>
-     <p>Date of Birth: </p> <input></input>
-     <p>Parent First Name: </p> <input></input>
-     <p>Parent Last Name: </p> <input></input>
-     <p>Phone Number: </p><input></input>
+    <div id = "basicInformation" class="bottom25">
+    	<h3>Basic Information</h3>
+     <label for="fname">First Name: </label>
+     	<input type="text" class="form-control" name="fname" id="fname"/>
+     <label for="lname">Last Name: </label>
+     	<input type="text" class="form-control" name="lname" id="lname"/>
+     <label for="dob">Date of Birth: </label>
+     	<input type="text" class="form-control" name="dob" id="dob"/>
+     <label for="pfname">Parent First Name: </label>
+     	<input type="text" class="form-control" name="pfname" id="pfname"/>
+     <label for="plname">Parent Last Name: </label>
+     	<input type="text" class="form-control" name="plname" id="plname"/>
+     <label for="phone">Phone Number: </label>
+     	<input type="text" class="form-control" name="phone" id="phone"/>
      </div>
-     <div id = "sizeInformation">
-        <p>Shirt Size</p><input></input>
-        <p>Pant Size</p><input></input>
-        <p>Bra Size</p><input></input>
-        <p>Shoe Size</p><input></input>
+     <div id = "sizeInformation" class="bottom25">
+     	<h3>Size Information</h3>
+        <label for="shirtSize">Shirt Size:</label>
+        	<input type="text" class="form-control" name="shirtSize" id="shirtSize"/>
+        <label for="pantSize">Pant Size:</label>
+        	<input type="text" class="form-control" name="pantSize" id="pantSize"/>
+        <label for="braSize">Bra Size:</label>
+        	<input type="text" class="form-control" name="braSize" id="braSize"/>
+        <label for="shoeSize">Shoe Size:</label>
+        	<input type="text" class="form-control" name="shoeSize" id="shoeSize"/>
      </div>
-     <div id = "Measurements">
-        <p>Bust</p><input></input>
-        <p>Hip</p><input></input>
-        <p>Waist</p><input></input>
-        <p>Chest</p><input></input>
+     <div id = "Measurements" class="bottom25">
+     	<h3>Measurements</h3>
+        <label for="bustMeasurement">Bust:</label>
+        	<input type="text" class="form-control" name="bustMeasurement" id="bustMeasurement"/>
+        <label for="hipMeasurement">Hip:</label>
+        	<input type="text" class="form-control" name="hipMeasurement" id="hipMeasurement"/>
+        <label for="waistMeasurement">Waist:</label>
+        	<input type="text" class="form-control" name="waistMeasurement" id="waistMeasurement"/>
+        <label for="chestMeasurement">Chest:</label>
+        	<input type="text" class="form-control bottom12" name="chestMeasurement" id="chestMeasurement"/>
      </div>
   </form>
+ </div>
+</body>
   
 </html>

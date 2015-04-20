@@ -4,30 +4,44 @@
     <meta charset="utf-8" />
     <meta name="author" content="Andrew Paulman" />
     <title>Dynamic Dance Costume Inventory</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/layout.css">
    </head>
   <body>
-  <h1 id = "mainTitle">Dynamic Dance Costume Inventory</h1>
-  <div id = "mainMenu">
-    <button id = "addNewDancer">Add New Dancer</button>
-    <button id = "addNewDance">Add New Dance</button>
-    <div id = "mainMenuOpenExistingDancerInfo">
-    <p>Look Up Dancer</p>
-    <select>
-      <option value = ""> </option>
-      <option value="Ali">Ali</option>
-      <option value="Sarah">Sarah</option>
-      <option value="Jessie">Jessie</option>
-      <option value="Molly">Molly</option>
-    </select>
+  	<div class="container-fluid bighead">
+  		<h1 id = "mainTitle">Dynamic Dance Costume Inventory</h1>
+  	</div>
+  <div id = "mainMenu" class="container-fluid">
+  	<div class="row bottom12">
+  		<div class="col-md-12">
+  			<button id = "addNewDancer" class="btn">Add New Dancer</button>
+    		<button id = "addNewDance" class="btn">Add New Dance</button>
+  		</div>
+  	</div>
+    <div class="row">
+    	<div id = "mainMenuOpenExistingDancerInfo" class="col-md-6">
+		    <p>Look Up Dancer</p>
+		    <select class="form-control bottom12">
+		      <option value = ""> </option>
+		      <option value="Ali">Ali</option>
+		      <option value="Sarah">Sarah</option>
+		      <option value="Jessie">Jessie</option>
+		      <option value="Molly">Molly</option>
+		    </select>
+		    <button class="btn">Look up</button>
+	    </div>
+	    <div id = "mainMenuOpenExistingDanceInfo" class="col-md-6">
+		    <p>Look Up Dance</p>
+		    <select class="form-control bottom12">
+		      <option value = ""> </option>
+		      <option value="LetTheBeatDrop">Let The Beat Drop</option>
+		      <option value="YouAreMySunshine">You Are My Sunshine</option>
+		    </select>
+		    <button class="btn">Look up</button>
+	    </div>
     </div>
-        <div id = "mainMenuOpenExistingDanceInfo">
-    <p>Look Up Dance</p>
-    <select>
-      <option value = ""> </option>
-      <option value="LetTheBeatDrop">Let The Beat Drop</option>
-      <option value="YouAreMySunshine">You Are My Sunshine</option>
-    </select>
-    </div>
-    
   </div>
+  </body>
 </html>

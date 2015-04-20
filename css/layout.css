@@ -1,0 +1,18 @@
+html,body{
+	background-color: #EAEAEA;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.bottom12{margin-bottom: 12px;}
+.bottom25{margin-bottom: 25px;}
+
+.bighead{
+	background-color: #DDDDDD;
+	margin-bottom: 25px;
+	border-bottom: 1px solid #C6C6C6;
+	box-shadow: 0px 1px 3px #BCBCBC;
+}
+.bighead h1{
+	text-align: center;
+	margin-bottom: 20px;
+}

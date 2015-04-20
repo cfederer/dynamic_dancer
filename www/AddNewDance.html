@@ -4,22 +4,49 @@
     <meta charset="utf-8" />
     <meta name="author" content="Andrew Paulman" />
     <title>Dynamic Dance Costume Inventory</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/layout.css">
    </head>
   <body>
-  <h1 id = "mainTitle">Dynamic Dance Costume Inventory</h1>
-  <h2 id = "newDancerTitle">Create A New Dance </h2>
+  <div class="container-fluid bighead">
+  		<h1 id = "mainTitle">Dynamic Dance Costume Inventory</h1>
+  	</div>
+  <div class="container-fluid">
+  <h2 id = "newDanceTitle">Create A New Dance </h2>
   <form>
-    <div id = "basicInformation">
-     <p>Dance Name: </p> <input></input>
-     <p>Dance Type: </p> <input></input>
-     <p>Age Group: </p> <input></input>
-     <p>Choreographer Name: </p> <input></input>
+    <div id = "basicInformation" class="bottom25">
+     <label for="danceName">Dance Name: </label>
+     	<input type="text" class="form-control" name="danceName" id="danceName" />
+     <label for="danceType">Dance Type: </label>
+     	<input type="text" class="form-control" name="danceType" id="danceType" />
+     <label for="ageGroup">Age Group: </label>
+     	<input type="text" class="form-control" name="ageGroup" id="ageGroup" />
+     <label for="choreographerName">Choreographer Name: </label> 
+     	<input type="text" class="form-control" name="choreographerName" id="choreographerName" />
    </div>
    <h2>Costume</h2>
-     <div class = "CostumePart">
+     <div class = "CostumePart" class="bottom25">
         <h4>Costume Part</h4>
-        <p>Part Name</p><input></input>
-        <p>Part Type</p>
+        <label for="partName">Part Name</label><input type="text" class="form-control" name="partName" id="partName" />
+        <label for="partType">Part Type</label>
+        <select class="form-control" name="partType" id="partType">
+          <option value=""></option>
+          <option value="shoe">Shoe</option>
+          <option value="shirt">Shirt</option>
+          <option value="pants">Pants</option>
+          <option value="bra">Bra</option>
+          <option value="rhinestones">Rhinestones</option>
+          <option value="other">Other</option>
+        </select>
+        <label for="cost">Cost</label><input type="text" class="form-control" name="cost" id="cost" />
+        <label for="salesPrice">Sales Price</label><input type="text" class="form-control" name="salesPrice" id="salesPrice" />
+     </div>
+     <!--<div class = "CostumePart">
+        <h4>Costume Part</h4>
+        <label for="">Part Name</label><input type="text" class="form-control" name="" id="" />
+        <label for="">Part Type</label>
         <select>
           <option value=""></option>
           <option value="shoe">Shoe</option>
@@ -29,13 +56,13 @@
           <option value="rhinestones">Rhinestones</option>
           <option value="other">Other</option>
         </select>
-        <p>Cost</p><input></input>
-        <p>Sales Price</p><input></input>
+        <label for="">Cost</label><input type="text" class="form-control" name="" id="" />
+        <label for="">Sales Price</label><input type="text" class="form-control" name="" id="" />
      </div>
      <div class = "CostumePart">
         <h4>Costume Part</h4>
-        <p>Part Name</p><input></input>
-        <p>Part Type</p>
+        <label for="">Part Name</label><input type="text" class="form-control" name="" id="" />
+        <label for="">Part Type</label>
         <select>
           <option value=""></option>
           <option value="shoe">Shoe</option>
@@ -45,13 +72,13 @@
           <option value="rhinestones">Rhinestones</option>
           <option value="other">Other</option>
         </select>
-        <p>Cost</p><input></input>
-        <p>Sales Price</p><input></input>
+        <label for="">Cost</label><input type="text" class="form-control" name="" id="" />
+        <label for="">Sales Price</label><input type="text" class="form-control" name="" id="" />
      </div>
      <div class = "CostumePart">
         <h4>Costume Part</h4>
-        <p>Part Name</p><input></input>
-        <p>Part Type</p>
+        <label for="">Part Name</label><input type="text" class="form-control" name="" id="" />
+        <label for="">Part Type</label>
         <select>
           <option value=""></option>
           <option value="shoe">Shoe</option>
@@ -61,26 +88,12 @@
           <option value="rhinestones">Rhinestones</option>
           <option value="other">Other</option>
         </select>
-        <p>Cost</p><input></input>
-        <p>Sales Price</p><input></input>
-     </div>
-     <div class = "CostumePart">
-        <h4>Costume Part</h4>
-        <p>Part Name</p><input></input>
-        <p>Part Type</p>
-        <select>
-          <option value=""></option>
-          <option value="shoe">Shoe</option>
-          <option value="shirt">Shirt</option>
-          <option value="pants">Pants</option>
-          <option value="bra">Bra</option>
-          <option value="rhinestones">Rhinestones</option>
-          <option value="other">Other</option>
-        </select>
-        <p>Cost</p><input></input>
-        <p>Sales Price</p><input></input>
-     </div>
+        <label for="">Cost</label><input type="text" class="form-control" name="" id="" />
+        <label for="">Sales Price</label><input type="text" class="form-control" name="" id="" />
+     </div>-->
      
   </form>
+  </div>
+  </body>
   
 </html>
