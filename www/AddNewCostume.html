@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Andrew Paulman" />
+    <title>Dynamic Dance Costume Inventory</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/layout.css">
+   </head>
+  <body>
+  	<div class="container-fluid bighead">
+  		<h1 id = "mainTitle">Dynamic Dance Costume Inventory</h1>
+  	</div>
+  <div class="container-fluid">
+  <h2 id = "newDancerTitle">Create A New Costume</h2>
+  <form>
+    <div id = "basicInformation" class="bottom25">
+    	<h3>Basic Information</h3>
+     <label for="costumeName">Costume Name: </label>
+     	<input type="text" class="form-control" name="costumeName" id="costumeName"/>
+     <label for="costumePartId">Costume Parts: </label>
+     <p class="alert alert-info">Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.</p>
+     <select class="form-control bottom12" name="costumePartId" id="costumePartId" multiple>
+          <option value="3">Red Shirt</option>
+          <option value="4">Purple Galaxy Leggings</option>
+     </select>
+     <input type="submit" class="btn" />
+     <!--<label for="lname">Last Name: </label>
+     	<input type="text" class="form-control" name="lname" id="lname"/>
+     <label for="dob">Date of Birth: </label>
+     	<input type="text" class="form-control" name="dob" id="dob"/>
+     <label for="pfname">Parent First Name: </label>
+     	<input type="text" class="form-control" name="pfname" id="pfname"/>
+     <label for="plname">Parent Last Name: </label>
+     	<input type="text" class="form-control" name="plname" id="plname"/>
+     <label for="phone">Phone Number: </label>
+     	<input type="text" class="form-control" name="phone" id="phone"/>-->
+     </div>
+  </form>
+ </div>
+</body>
+  
+</html>
