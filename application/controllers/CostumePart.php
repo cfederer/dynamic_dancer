@@ -13,8 +13,7 @@ class CostumePart extends CI_Controller{
 	public function index(){$this -> view();}
 	
 	public function fetchAll(){
-		$sql = 'SELECT * FROM costumePart';
-		$query = $this -> db -> query($sql);
+		$query = $this -> db -> get($this -> tableName);
 		
 		return $query -> result_array();
 	}
@@ -32,7 +31,7 @@ class CostumePart extends CI_Controller{
 		
 		$this -> db -> insert($this -> tableName, $data);
 		
-		$this -> view();
+		redirect('CostumePart/view');
 		
 		//$query = $this -> db -> query();
 		//foreach()
@@ -52,7 +51,7 @@ class CostumePart extends CI_Controller{
 		$this -> db -> where('costumePartId', $this -> input -> post('costumePartId'));
 		$this -> db -> update($this -> tableName, $data);
 		
-		$this -> view();
+		redirect('CostumePart/view');
 		
 		//$query = $this -> db -> query();
 		//foreach()
@@ -60,7 +59,7 @@ class CostumePart extends CI_Controller{
 	
 	public function deletePart($id){
 		$this -> db -> delete($this -> tableName, array('costumePartId' => $id));
-		$this -> view();
+		redirect('CostumePart/view');
 	}
 	
 	public function add(){

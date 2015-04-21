@@ -20,10 +20,10 @@
   	<div class="container-fluid">
   		<div class="row">
   			<div class="col-md-12">
-  				<a href="<?php echo site_url('dancer/add'); ?>">Dancers</a>&nbsp;&nbsp;&nbsp;
-  				<a href="<?php echo site_url('dance/add'); ?>">Dances</a>&nbsp;&nbsp;&nbsp;
-  				<a href="<?php echo site_url('costume/add'); ?>">Costumes</a>&nbsp;&nbsp;&nbsp;
-  				<a href="<?php echo site_url('costumePart/add'); ?>">Costume Parts</a>
+  				<a href="<?php echo site_url('dancer/view'); ?>">Dancers</a>&nbsp;&nbsp;&nbsp;
+  				<a href="<?php echo site_url('dance/view'); ?>">Dances</a>&nbsp;&nbsp;&nbsp;
+  				<a href="<?php echo site_url('costume/view'); ?>">Costumes</a>&nbsp;&nbsp;&nbsp;
+  				<a href="<?php echo site_url('costumePart/view'); ?>">Costume Parts</a>
   			</div>
   		</div>
   	</div>
