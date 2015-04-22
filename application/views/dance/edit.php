@@ -1,6 +1,7 @@
 <div class="container-fluid">
   <h2 id = "newDanceTitle">Create A New Dance </h2>
   <form method="post" action="<?php echo site_url('dance/addDance'); ?>">
+  	<input type="hidden" name="danceId" value="" />
     <div id = "basicInformation" class="bottom25">
      <label for="danceName">Dance Name: </label>
      	<input type="text" class="form-control" name="danceName" id="danceName" />
