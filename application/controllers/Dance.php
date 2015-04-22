@@ -14,6 +14,10 @@ class Dance extends CI_Controller{
 		$this -> costumesDanceTableName = 'Costumes_In_Dance';
 		$this -> dancersDanceTableName = 'Dancers_In_Dance';
 		$this -> dancerCostumeTableName = 'Dancer_In_Costumes';
+		$this -> dancerDanceCostumeTableName = 'Dancer_Dance_Costumes';
+		$this -> costumePartsTableName = 'costumePart';
+		$this -> costumeAndPartsTableName = 'Costume_And_Parts';
+		$this -> dancerAndDanceAndCostumePart = 'Dancer_And_Dance_And_CostumePart';
 	}
 	
 	public function index(){$this -> view();}
@@ -65,14 +69,33 @@ class Dance extends CI_Controller{
 		$this -> db -> insert($this -> tableName, $data);
 		$danceId = $this -> db -> insert_id();
 		
-		$danceCostumeInserted = array();
+		//$danceCostumeInserted = array();
 		$numDancers = (int) $this -> input -> post('numDancers');
 		for($i = 1; $i <= $numDancers; $i++){
 			$dancerId = $this -> input -> post('dancer_' . $i);
 			$costumeId = $this -> input -> post('costume_' . $i);
 			
+			$this -> db -> insert($this -> dancerDanceCostumeTableName, array(
+				'danceId' => $danceId,
+				'dancerId' => $dancerId,
+				'costumeId' => $costumeId
+			));
+			
+			$query = $this -> db -> get_where($this -> costumeAndPartsTableName, array('costumeId' => $costumeId));
+			$costumesAndParts = $query -> result_array();
+			foreach($costumesAndParts as $parts){
+				$partId = $parts['costumePartId'];
+				$this -> db -> insert($this -> dancerAndDanceAndCostumePart, array(
+					'danceId' => $danceId,
+					'dancerId' => $dancerId,
+					'costumePartId' => $partId
+				));
+			}
+			
+			
+			
 			// Prevent duplicates
-			if(!in_array($costumeId, $danceCostumeInserted)){
+			/*if(!in_array($costumeId, $danceCostumeInserted)){
 				$this -> db -> insert($this -> costumesDanceTableName, array(
 					'danceId' => $danceId,
 					'costumeId' => $costumeId
@@ -91,7 +114,7 @@ class Dance extends CI_Controller{
 			
 			$dancers[$i] = array();
 			$dancers[$i]['dancerId'] = $this -> input -> post('dancer_' . $i);
-			$dancers[$i]['costumeId'] = $this -> input -> post('costume_' . $i);
+			$dancers[$i]['costumeId'] = $this -> input -> post('costume_' . $i);*/
 		}
 		
 		redirect('dance/view');
