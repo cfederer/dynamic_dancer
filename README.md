@@ -1,2 +1,2 @@
 # dynamic_dancer
-Database project 
+This was a group projects for a CS 540 Database Systems in Spring 2015. We designed a web page for a teammate's sister who runs a dance studio. Our website created a backend database to store supplies (shoes, costumes, etc.), students, and upcoming performences. It created forms to get sizes for each dancer, what supplies they already had, and what they would need for their next performance. 
